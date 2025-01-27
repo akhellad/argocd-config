@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: akhellad-app
   namespace: dev
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: akhellad-app
   replicas: 1
   template:
     metadata:
       labels:
-        app: myapp
+        app: akhellad-app
     spec:
       containers:
-      - name: myapp
-        image: wil42/playground:v1
+      - name: akhellad-app
+        image: akhelld/iot-app:v1
         ports:
         - containerPort: 8888
