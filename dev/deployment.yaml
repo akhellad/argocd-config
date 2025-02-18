@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: akhellad-app
-        image: akhelld/iot-app-akhellad:v2
+        image: akhelld/iot-app-akhellad:v1
         ports:
         - containerPort: 8888
